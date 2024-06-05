@@ -1,22 +1,26 @@
-import './index.scss';
+import "./index.scss";
 
 const questions = [
   {
-    title: 'React - это ... ?',
-    variants: ['библиотека', 'фреймворк', 'приложение'],
+    title: "React - is ... ?",
+    variants: ["library", "framework", "application"],
     correct: 0,
   },
   {
-    title: 'Компонент - это ... ',
-    variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+    title: "Component - is ... ",
+    variants: [
+      "application",
+      "part of an application or page",
+      "what I don't know what it is",
+    ],
     correct: 1,
   },
   {
-    title: 'Что такое JSX?',
+    title: "What is JSX?",
     variants: [
-      'Это простой HTML',
-      'Это функция',
-      'Это тот же HTML, но с возможностью выполнять JS-код',
+      "This is simple HTML",
+      "This is function",
+      "This is the same HTML, but with the ability to execute JS code",
     ],
     correct: 2,
   },
@@ -25,9 +29,12 @@ const questions = [
 function Result() {
   return (
     <div className="result">
-      <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
-      <h2>Вы отгадали 3 ответа из 10</h2>
-      <button>Попробовать снова</button>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png"
+        alt="congratulaion"
+      />
+      <h2>You guessed 3 answers out of 10</h2>
+      <button>Try again</button>
     </div>
   );
 }
@@ -36,13 +43,13 @@ function Game() {
   return (
     <>
       <div className="progress">
-        <div style={{ width: '50%' }} className="progress__inner"></div>
+        <div style={{ width: "50%" }} className="progress__inner"></div>
       </div>
-      <h1>Что такое useState?</h1>
+      <h1>What is useState?</h1>
       <ul>
-        <li>Это функция для хранения данных компонента</li>
-        <li>Это глобальный стейт</li>
-        <li>Это когда на ты никому не нужен</li>
+        <li>This is a function to store component data</li>
+        <li>This is a global state</li>
+        <li>This is when no one needs you</li>
       </ul>
     </>
   );
