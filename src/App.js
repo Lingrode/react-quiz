@@ -37,7 +37,7 @@ function Result({ correct }) {
       <h2>
         You guessed {correct} answers out of {questions.length}
       </h2>
-      <a href="/">
+      <a href="/react-quiz">
         <button>Try again</button>
       </a>
     </div>
